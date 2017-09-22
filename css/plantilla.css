@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+header{
+	background-color: rgba(79,98,112,1.00);
+	padding: 15px;
+	
+}
+#titulo{
+	color:aliceblue;
+	margin: 15px;
+}
+footer{
+	background-color: rgba(79,98,112,1.00);
+	padding: 15px;
+}
+.pie{
+	color: aliceblue;
+	font-style: bold;
+}
+main{
+	position: 
+}
+a

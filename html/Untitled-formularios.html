@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>formularios</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form action="https://tecweb-acominf.c9users.io/envio.php" method="POST">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <table>
+                    <tr>
+                        <td>
+                            Nombre: 
+                        </td>
+                        <td>
+                            <input type="text" name="nombre" placeholder="Juan" required> 
+                        </td>
+                        <td> 
+                            Fecha de nacimiento
+                        </td>
+                        <td>
+                            <input type="date" name="fecha">
+                        </td>
+                        <td rowspan="3">
+                            <center>foto de perfil:</center><br>
+                            <input type="file" name="foto">
+                        </td>
+                        <td rowspan="3">
+                            <center>Comentarios:</center><br>
+                            <textarea name="comentarios" placeholder="Escribe tus comentarios"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Contraseña: 
+                        </td>
+                        <td>
+                            <input type="password" name="contraseña" placeholder="**********" required>
+                        </td>
+                        <td>
+                            Materias Favoritas: 
+                        </td>
+                        <td>
+                            <select name="materiaFav[]" multiple>
+                                <option value="Quimica">Quimica</option>
+                                <option value="Matematicas">Matematicas</option>
+                                <option value="Fisica">Fisica</option>
+                                <option value="Programacion">Programacion</option>
+                                <option value="Ingles">Ingles</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Edad: 
+                        </td>
+                        <td>  
+                            <input type="number" name="edad" placeholder="20" required>
+                        </td>
+                        <td>
+                            Estado de Origen: 
+                        </td>
+                        <td>
+                            <select name="materias">
+                                <option value="Cundinamarca">Cundinamarca</option>
+                                <option value="Boyacá">Boyacá</option>
+                                <option value="Antioquia">Antioquia</option>
+                                <option value="Casanare">Casanare</option>
+                                <option value="Tolima">Tolima</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Preferencias</legend>
+                <h3>Sistema Operativo:</h3>
+                <input type="checkbox" name="so[]" value="windows">Windows
+                <input type="checkbox" name="so[]" value="linux">Linux
+                <input type="checkbox" name="so[]" value="osx">OSX
+                <h3>Telèfono:</h3>
+                <input type="radio" name="tel" value="android" required> Android
+                <input type="radio" name="tel" value="ios" required> IOS
+            </fieldset>
+            <fieldset>
+                <legend>Enviar</legend>
+                <input type="submit" value="Registrar">
+                <input type="reset" value="Limpiar">
+            </fieldset>
+      </form> 
+    </body>
+</html>
