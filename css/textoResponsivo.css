@@ -1,22 +1,70 @@
 body{
-    background-color: yellow;
+    background-color: gray;
+}
+.contenedor{
+    max-width: 75rem; 
+}
+html{
+    font-size: 200%;
+}
+@media screen and (min-width:100rem){
+    .contenedor{
+       background-color: yellow;
+    }
+    .smartTv{
+        display: block;
+    }
+    .tablet, .desktop, .movil{
+      display: none;
+    }
+    html{
+        font-size: 200%;
+    }
 }
 
-@media screen and (max-width:1600px){
-    body{
+@media screen and (max-width:100rem){
+    .contenedor{
         background-color: red;
     }
+    .desktop{
+        display: block;
+    }
+    .tablet, .movil, .SmartTv{
+        display: none;
+    }
+    html{
+        font-size: 150%;
+    }
 }
 
-@media screen and (max-width:800px){
-    body{
+@media screen and (max-width:50rem){
+    .contenedor{
         background-color: blue;
     }
-}
-
-@media screen and (max-width:400px){
-    body{
-        background-color: green;
+    .tablet{
+        display: block;
+    }
+    .movil, .desktop, .SmartTv{
+        display: none;
+    }
+    html{
+        font-size: 100%;
     }
 }
+
+@media screen and (max-width:25rem){
+    .contenedor{
+        background-color: green;
+    }
+    .movil{
+        display: block;
+    }
+    .tablet, .desktop, .SmartTv{
+        display: none;
+    }
+    html{
+        font-size: 80%;
+    }
+}
+
 
